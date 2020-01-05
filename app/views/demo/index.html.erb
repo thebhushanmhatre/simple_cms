@@ -1,0 +1,8 @@
+<h2><%= link_to("Hello Page", {:action => 'hello'}) %></h2>
+<br />
+<%= link_to("Parameter inside link_to('text', {action:'hello', page: 5, index: 20 })", {action:'hello', page: 5, id: 20 }) %>
+<h3>Inside demo/index.html.erb</h3>
+<p>rails generate controller demo index</p>
+
+<h3>Wrong link Don't Click <a href="demo/hello"> HTML based href to 'demo/hello' </a> What's wrong? there is no slash '/' before demo </h3>
+<br />

@@ -1,0 +1,20 @@
+<% evil_string ="<script>alert('Gothca!');</script>" %>
+<% good_string ="<strong>Welcome to my Site</strong>" %>
+
+<%= evil_string.html_safe %>
+<br />
+<%= good_string.html_safe %>
+
+<!-- 
+<%= raw evil_string %>
+<br />
+<%= raw good_string %> -->
+
+<!-- 
+<%= h evil_string.html_safe %>
+<br />
+<%= h good_string.html_safe %> -->
+
+<%= evil_string.html_safe %>
+<br />
+<%= good_string.html_safe %>

@@ -1,0 +1,17 @@
+<h2><%= link_to("Index Page", {:action => 'index'}) %></h2>
+
+<%= "Page = #{@page} and Id = #{@id}" %>
+<br />
+<p>Params = <%= params %> </p>
+
+<h3>Inside demo/hello.html.erb</h3>
+
+<p>@myArray = <%= @myArray %> is an instance variable inside Controller class, so available here </p>
+<% @myArray.each do |i| %>
+  <%= i %>
+<% end %>
+<p>Remember you can only send data from controller to view, not from view to controller</p>
+
+<br /> <a href="/demo/index"> HTML based href to 'demo/index' </a>
+<br /> <%= link_to("Rails based link_to('text', {controller, action})", {:action => 'index'}) %>
+<br /> <h4>Observe the link of link_to, Rails prefer the shorter route </h4>
