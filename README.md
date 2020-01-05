@@ -28,7 +28,8 @@ Simple CMS Application:
 
 Subject -> Many Pages -> Many Sections
 
-Database and their columns
+* Database and their columns
+
 #<Subject id, name, position, visible, created_at, updated_at>
 #<Page id, subject_id, name, permalink, position, visible, created_at, updated_at>
 #<Section id, page_id, name, position, visible, content_type, content, created_at, updated_at>
